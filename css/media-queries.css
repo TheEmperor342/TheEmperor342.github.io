@@ -12,11 +12,7 @@
     display: block;
   }
   .skills {
-    padding-top: 50px;
     height: calc(115vh - 70px);
-  }
-  .spacing {
-    height: 15vh;
   }
   footer {
     flex-direction: column;
@@ -39,9 +35,6 @@
   }
   nav img {
     margin-left: 5px;
-  }
-  .projects {
-    padding-top: 100px;
   }
   .tech {
     display: grid;
@@ -69,9 +62,6 @@
   }
   .skills {
     height: calc(120vh - 70px);
-  }
-  .spacing {
-    height: 15vh;
   }
   footer {
     flex-direction: column;

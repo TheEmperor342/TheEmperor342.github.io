@@ -1,3 +1,8 @@
+.content {
+  height: calc(100vh - 70px);
+  overflow-x: scroll;
+}
+
 .home,
 .projects,
 .skills {
@@ -10,7 +15,6 @@
   scroll-snap-align: start;
 }
 .home {
-  padding-top: 75px;
   height: calc(100vh - 70px);
 }
 .themeChanger {
@@ -28,26 +32,23 @@
   grid-template-columns: 1fr 1fr;
   margin-top: 15px;
 }
-
-.cards div {
+.cards > :last-child {
+  grid-column: span 2;
+}
+.card {
   border: 1px solid var(--txt-color);
   border-radius: 5px;
   padding: 1rem 5px;
 }
-
 .rotate:hover {
   animation: rotation 5s infinite linear;
 }
-.tech span {
-  display: none;
-}
-
 .tech {
   display: grid;
   margin-top: 1.5rem;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   place-items: center;
-  gap: 1rem;
+  gap: 2.5rem;
 }
 #github {
   margin-right: 0.8rem;

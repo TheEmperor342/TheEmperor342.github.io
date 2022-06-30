@@ -13,14 +13,14 @@
   </head>
   <body>
     <nav>
-      <a href="#">
+      <a href="#home">
         <img
           id="pfp"
           src="https://avatars.githubusercontent.com/u/83999665?v=4"
           width="50"
       /></a>
       <div>
-        <a href="#"><p>Home</p></a>
+        <a href="#home"><p>Home</p></a>
         <a href="#projects"><p>Projects</p></a>
         <a href="#skills"><p>Skills</p></a>
         <button id="themeChanger" class="themeChanger" onclick="themeChanger()">
@@ -28,132 +28,169 @@
         </button>
       </div>
     </nav>
+    <div class="content">
+      <div class="home" id="home">
+        <h1>Hi, I'm <span>Emperor</span></h1>
+        <p>A Hobbyist Programmer and a Linux Enthusiast</p>
+      </div>
 
-    <div class="home" id="home">
-      <h1>Hi, I'm <span>Emperor</span></h1>
-      <p>A Hobbyist Programmer and a Linux Enthusiast</p>
-    </div>
+      <div class="projects" id="projects">
+        <h1>My <span>Projects</span></h1>
+        <div class="cards">
+          <div class="card">
+            <h3>
+              <span>MonoInit</span>
+              <sup
+                ><img id="python" src="assets/mocha/python.svg" height="25"
+              /></sup>
+            </h3>
+            <p>Monorepo build system for hackarmour</p>
+            <br />
+            <a href="https://github.com/hackarmour/monoinit"
+              ><button>GitHub</button></a
+            >
+          </div>
 
-    <div class="projects" id="projects">
-      <h1>My <span>Projects</span></h1>
-      <div class="cards">
-        <div>
-          <h3>
-            <span>MonoInit</span>
-            <sup
-              ><img id="python" src="assets/mocha/python.svg" height="25"
-            /></sup>
-          </h3>
-          <p>Monorepo build system for hackarmour</p>
-          <br />
-          <a href="https://github.com/hackarmour/monoinit"
-            ><button>GitHub</button></a
-          >
+          <div class="card">
+            <h3>
+              <span>My Portfolio </span>
+              <sup
+                ><img
+                  id="javascript"
+                  src="assets/mocha/javascript.svg"
+                  height="25"
+              /></sup>
+            </h3>
+            <p>This website itself</p>
+            <br />
+            <a><button>GitHub</button></a>
+          </div>
+
+          <div class="card">
+            <h3>
+              <span>Discord Assistant</span>
+              <sup
+                ><img id="python" src="assets/mocha/python.svg" height="25"
+              /></sup>
+            </h3>
+            <p>A Discord bot written in Python</p>
+            <br />
+            <a href="https://github.com/hackarmour/discord-assistant-py"
+              ><button>GitHub</button></a
+            >
+          </div>
+
+          <div class="card">
+            <h3>
+              <span>Todo</span>
+              <sup
+                ><img id="react" src="assets/mocha/react.svg" height="25"
+              /></sup>
+            </h3>
+            <p>A simple todo application I wrote for practicing react</p>
+            <br />
+            <a href="https://github.com/TheEmperor342/React-Todo-App"
+              ><button>GitHub</button></a
+            >
+            <a href="https://theemperor342.github.io/React-Todo-App/">
+              <button>Website</button>
+            </a>
+          </div>
+          <div class="card">
+            <h3>
+              <span>SVG Image API</span>
+              <sup>
+                <img
+                  id="typescript"
+                  src="assets/mocha/typescript.svg"
+                  height="25"
+                />
+                <img id="express" src="assets/mocha/express.svg" height="25" />
+              </sup>
+            </h3>
+            <p>An API for fetching images with custom colors</p>
+            <br />
+            <a href="https://github.com/TheEmperor342/svg-image-api"
+              ><button>GitHub</button></a
+            >
+            <a href="https://svgimageapi.herokuapp.com">
+              <button>Website</button>
+            </a>
+          </div>
         </div>
-
-        <div>
-          <h3>
-            <span>My Portfolio </span>
-            <sup
-              ><img
-                id="javascript"
-                src="assets/mocha/javascript.svg"
-                height="25"
-            /></sup>
-          </h3>
-          <p>This website itself</p>
-          <br />
-          <a><button>GitHub</button></a>
+      </div>
+      <div class="spacing"></div>
+      <div class="skills" id="skills">
+        <h1>My <span>Skills</span></h1>
+        <div class="tech" id="tech">
+          <div>
+            <img id="python" src="assets/mocha/python.svg" height="100" />
+            <p>Python</p>
+          </div>
+          <div>
+            <img
+              id="javascript"
+              src="assets/mocha/javascript.svg"
+              height="100"
+            />
+            <p>JavaScript</p>
+          </div>
+          <div>
+            <img id="html" src="assets/mocha/html.svg" height="100" />
+            <p>HTML5</p>
+          </div>
+          <div>
+            <img id="css" src="assets/mocha/css.svg" height="100" />
+            <p>CSS3</p>
+          </div>
+          <div>
+            <img id="node" src="assets/mocha/node.svg" height="100" />
+            <p>Node.js</p>
+          </div>
+          <div>
+            <img
+              id="react"
+              class="rotate"
+              src="assets/mocha/react.svg"
+              height="100"
+            />
+            <p>React.js</p>
+          </div>
+          <div>
+            <img id="git" src="assets/mocha/git.svg" height="100" />
+            <p>Git</p>
+          </div>
+          <div>
+            <img id="tux" src="assets/mocha/tux.svg" height="100" />
+            <p>Linux</p>
+          </div>
+          <div>
+            <img id="express" src="assets/mocha/express.svg" height="100" />
+            <p>Express.js</p>
+          </div>
+          <div>
+            <img
+              id="typescript"
+              src="assets/mocha/typescript.svg"
+              height="100"
+            />
+            <p>TypeScript</p>
+          </div>
         </div>
-
+      </div>
+      <div class="spacing"></div>
+      <footer>
+        <p><span>©</span> TheEmperor342. All rights reserved</p>
         <div>
-          <h3>
-            <span>Discord Assistant</span>
-            <sup
-              ><img id="python" src="assets/mocha/python.svg" height="25"
-            /></sup>
-          </h3>
-          <p>A Discord bot written in Python</p>
-          <br />
-          <a href="https://github.com/hackarmour/discord-assistant-py"
-            ><button>GitHub</button></a
-          >
-        </div>
-
-        <div>
-          <h3>
-            <span>Todo</span>
-            <sup
-              ><img id="react" src="assets/mocha/react.svg" height="25"
-            /></sup>
-          </h3>
-          <p>A simple todo application I wrote for practicing react</p>
-          <br />
-          <a href="https://github.com/TheEmperor342/React-Todo-App"
-            ><button>GitHub</button></a
-          >
-          <a href="https://theemperor342.github.io/React-Todo-App/">
-            <button>Website</button>
+          <a href="https://github.com/TheEmperor342">
+            <img id="github" src="assets/mocha/github.svg" width="35" />
+          </a>
+          <a href="https://discord.com/users/754894159403286531">
+            <img id="discord" src="assets/mocha/discord.svg" width="35" />
           </a>
         </div>
-      </div>
+      </footer>
     </div>
-    <div class="spacing"></div>
-    <div class="skills" id="skills">
-      <h1>My <span>Skills</span></h1>
-      <div class="tech" id="tech">
-        <div>
-          <img id="python" src="assets/mocha/python.svg" height="100" />
-          <p>Python</p>
-        </div>
-        <div>
-          <img id="javascript" src="assets/mocha/javascript.svg" height="100" />
-          <p>JavaScript</p>
-        </div>
-        <div>
-          <img id="html" src="assets/mocha/html.svg" height="100" />
-          <p>HTML5</p>
-        </div>
-        <div>
-          <img id="css" src="assets/mocha/css.svg" height="100" />
-          <p>CSS3</p>
-        </div>
-        <div>
-          <img id="node" src="assets/mocha/node.svg" height="100" />
-          <p>Node.js</p>
-        </div>
-        <div>
-          <img
-            id="react"
-            class="rotate"
-            src="assets/mocha/react.svg"
-            height="100"
-          />
-          <p>React.js</p>
-        </div>
-        <div>
-          <img id="git" src="assets/mocha/git.svg" height="100" />
-          <p>Git</p>
-        </div>
-        <span></span>
-        <div>
-          <img id="tux" src="assets/mocha/tux.svg" height="100" />
-          <p>Linux</p>
-        </div>
-      </div>
-    </div>
-    <div class="spacing"></div>
-    <footer>
-      <p><span>©</span> TheEmperor342. All rights reserved</p>
-      <div>
-        <a href="https://github.com/TheEmperor342">
-          <img id="github" src="assets/mocha/github.svg" width="35" />
-        </a>
-        <a href="https://discord.com/users/754894159403286531">
-          <img id="discord" src="assets/mocha/discord.svg" width="35" />
-        </a>
-      </div>
-    </footer>
     <script src="script.js"></script>
   </body>
 </html>

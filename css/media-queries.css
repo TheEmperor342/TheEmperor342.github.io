@@ -1,4 +1,8 @@
 @media (max-width: 1100px) {
+  .skills,
+  .projects {
+    height: calc(100vh - 70px);
+  }
   .cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -8,8 +12,8 @@
     grid-template-columns: 1fr 1fr 1fr;
     place-items: center;
   }
-  .tech span {
-    display: block;
+  .tech > :last-child {
+    grid-column: span 3;
   }
   .skills {
     height: calc(115vh - 70px);
@@ -22,7 +26,6 @@
     font-size: 0.9rem;
   }
 }
-
 @media (max-width: 600px) {
   h1 {
     font-size: 2.3rem;
@@ -36,16 +39,27 @@
   nav img {
     margin-left: 5px;
   }
+  .skills,
+  .projects {
+    height: calc(100vh - 70px);
+    padding: 0px;
+  }
+  .projects {
+    height: calc(130vh - 70px);
+  }
   .tech {
     display: grid;
     grid-template-columns: 1fr 1fr;
     place-items: center;
     gap: 1.5rem;
   }
+  .tech > :last-child {
+    grid-column: unset;
+  }
   .cards {
     grid-template-columns: 1fr;
   }
-  .cards div {
+  .card {
     padding: 10px;
   }
   .cards > :last-child {
@@ -69,5 +83,12 @@
   }
   p {
     font-size: 0.9rem;
+  }
+}
+
+@media (max-height: 550px) and (max-width: 1100px) {
+  .skills,
+  .projects {
+    height: calc(150vh - 70px);
   }
 }

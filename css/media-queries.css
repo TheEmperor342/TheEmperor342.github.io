@@ -5,9 +5,6 @@
   .tech {
     margin-inline: 5rem;
   }
-  .skills {
-    height: calc(115vh - 70px);
-  }
   footer {
     flex-direction: column;
     justify-content: center;
@@ -16,7 +13,10 @@
     font-size: 0.9rem;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 800px) {
+  html {
+    scroll-padding-top: 75px;
+  }
   h1 {
     font-size: 2.3rem;
   }
@@ -29,16 +29,8 @@
   nav img {
     margin-left: 5px;
   }
-  .skills,
-  .projects {
-    height: calc(100vh - 70px);
-    padding: 0px;
-  }
-  .projects {
-    height: calc(130vh - 70px);
-  }
   .cards {
-    margin-inline: 1rem;
+    margin-inline: 5px;
   }
   .tech img {
     height: 75px;
@@ -46,11 +38,11 @@
   .tech span {
     display: none;
   }
-  .tech {
-    margin-block: 1rem;
-  }
   .skills {
-    height: calc(120vh - 70px);
+    margin-top: 8rem;
+  }
+  .tech {
+    margin-block: 5px;
   }
   footer {
     flex-direction: column;
@@ -58,12 +50,5 @@
   }
   p {
     font-size: 0.9rem;
-  }
-}
-
-@media (max-height: 550px) and (max-width: 1100px) {
-  .skills,
-  .projects {
-    height: calc(150vh - 70px);
   }
 }

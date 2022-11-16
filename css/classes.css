@@ -16,7 +16,7 @@
   height: 100vh;
 }
 body {
-  background: radial-gradient(ellipse at top left, var(--bg-2) 0%, var(--bg-1) 75%);
+  background: radial-gradient(circle at top left, var(--bg-2) 0%, var(--bg-1) 75%);
   background-repeat: no-repeat;
 }
 .themeChanger {

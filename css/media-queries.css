@@ -1,19 +1,9 @@
 @media (max-width: 1100px) {
-  .skills,
-  .projects {
-    height: calc(100vh - 70px);
-  }
   .cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    margin-inline: 5rem;
   }
   .tech {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    place-items: center;
-  }
-  .tech > :last-child {
-    grid-column: span 3;
+    margin-inline: 5rem;
   }
   .skills {
     height: calc(115vh - 70px);
@@ -47,23 +37,8 @@
   .projects {
     height: calc(130vh - 70px);
   }
-  .tech {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    place-items: center;
-    gap: 1.5rem;
-  }
-  .tech > :last-child {
-    grid-column: unset;
-  }
   .cards {
-    grid-template-columns: 1fr;
-  }
-  .card {
-    padding: 10px;
-  }
-  .cards > :last-child {
-    grid-column: span 1;
+    margin-inline: 1rem;
   }
   .tech img {
     height: 75px;

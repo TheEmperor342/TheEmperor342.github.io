@@ -3,6 +3,9 @@
 :root {
   --bg-0: #161320;
   --bg-1: #1a1826;
+  --nav-r: 24;
+  --nav-g: 24;
+  --nav-b: 37;
   --bg-2: #1e1e2e;
   --teal: #b5e8e0;
   --blue: #96cdfb;
@@ -18,7 +21,6 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 75px;
 }
 
 h1,
@@ -43,9 +45,9 @@ span {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-body {
+/* body {
   background-color: var(--bg-2);
-}
+} */
 
 button {
   cursor: pointer;
@@ -61,12 +63,16 @@ button:hover {
 }
 
 nav {
-  background-color: var(--bg-1);
+  background-color: rgba(var(--nav-r), var(--nav-g), var(--nav-b), 0.5);
+  backdrop-filter: blur(1rem);
   width: 100%;
   height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0%;
 }
 
 nav img {

@@ -22,9 +22,10 @@
   }
   nav {
     padding-inline: 1px;
+    width: 100%;
   }
   nav div {
-    margin-right: 0px;
+    margin-right: 15px;
   }
   nav img {
     margin-left: 5px;
@@ -50,5 +51,11 @@
   }
   p {
     font-size: 0.9rem;
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .hidden {
+    transition: none;
   }
 }

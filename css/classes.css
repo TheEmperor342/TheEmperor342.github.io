@@ -1,5 +1,13 @@
-
-
+.hidden {
+  opacity: 0;
+  transition: 1s;
+  transform: translateX(-100%)
+}
+.show {
+  transform: translateX(0);
+  filter: blur(0);
+  opacity: 1;
+}
 .home,
 .projects,
 .skills {
@@ -36,9 +44,15 @@ body {
   flex-grow: 1;
 }
 .card {
-  border: 1px solid var(--txt-color);
+  border: 1px solid var(--overlay-2);
   border-radius: 5px;
   padding: 1rem 5px;
+}
+.fade {
+  transition: 1s;
+  opacity: 0;
+  animation: fadeUp 1s forwards;
+  animation-delay: calc(var(--order) * 200ms);
 }
 .rotate {
   animation: rotation 5s infinite linear;
@@ -64,5 +78,15 @@ body {
   }
   to {
     transform: rotate(359deg);
+  }
+}
+@keyframes fadeUp {
+  0%{
+    opacity: 0;
+    transform: translateY(20%)
+  }
+  30%, 100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;900&display=swap');
+
+:root {
+  --bg: rgba(244, 227, 204, 1);
+  --text: rgba(30, 30, 30, 1);
+  --text-shadow: rgba(30, 30, 30, 70%);
+  --btn-primary-clr: rgba(228, 182, 116, 1);
+  --btn-primary-hvr-clr: rgba(228, 182, 116, 0.7);
+}
+
+*::before,
+*,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--bg);
+}
+
+p, h1 {
+  font-family: "work sans", sans-serif;
+  color: var(--text);
+}
+
+section {
+  min-height: 100svh;
+}
+.section-A {
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 1fr;
+}
+.section-A__img {
+  border-radius: 50%;
+  border: none;
+  box-shadow: 50px -50px 0px var(--text); 
+}
+.section-A__hi {
+  font-size: 14.75rem;
+  line-height: 95%;
+  text-shadow: 20px -20px 0px var(--text-shadow);
+}
+.section-A__p {
+  font-size: 1.1rem;
+  margin-left: 12px;
+}
+button {
+  cursor: pointer;
+  padding: 0.4rem;
+  font-size: 1.1rem;
+  font-family: "work sans", sans-serif;
+  border: none;
+  border-radius: 5px;
+}
+.btn-primary {
+  background: var(--btn-primary-clr);
+  transition: background 250ms;
+}
+.btn-primary:hover {
+  background: var(--btn-primary-hvr-clr);
+}
+.section-A__btn {
+  margin-top: 1rem;
+  margin-left: 12px;
+}

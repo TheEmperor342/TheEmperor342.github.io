@@ -3,9 +3,23 @@
 :root {
   --bg: rgba(244, 227, 204, 1);
   --text: rgba(30, 30, 30, 1);
+
+  --section-padding-left: 8.12rem;
   --text-shadow: rgba(30, 30, 30, 70%);
-  --btn-primary-clr: rgba(228, 182, 116, 1);
-  --btn-primary-hvr-clr: rgba(228, 182, 116, 0.7);
+
+  --avatar-shadow-offset: 2.22rem -2.22rem;
+  --h1-shadow-offset: 0.88rem -0.88rem;
+  --h1-font-size: 8.89rem;
+  --hi-font-size: 13.3rem;
+
+  --section-B__img-width: 8.75rem;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: rgba(30, 30, 30, 1);
+    --text: rgba(244, 227, 204, 1);
+    --text-shadow: rgba(244, 227, 204, 30%);
+  }
 }
 
 *::before,
@@ -17,6 +31,9 @@
 }
 
 html {
+  scroll-behavior: smooth;
+  height: 1vh;
+  height: 1svh;
   background: var(--bg);
 }
 
@@ -24,27 +41,42 @@ p, h1 {
   font-family: "work sans", sans-serif;
   color: var(--text);
 }
+h1 {
+  line-height: 95%;
+  text-shadow: var(--h1-shadow-offset) 0px var(--text-shadow);
+  font-size: var(--h1-font-size);
+}
 
 section {
   min-height: 100svh;
+  scroll-snap-align: start;
+}
+section:not(.section-A) {
+  padding-inline: var(--section-padding-left);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .section-A {
   display: grid;
   place-items: center;
   grid-template-columns: 1fr 1fr;
 }
-.section-A__img {
+.section-A__wrapper {
+  margin-left: 3rem;
+}
+.section-A__avatar {
   border-radius: 50%;
+  width: 13.3rem;
   border: none;
-  box-shadow: 50px -50px 0px var(--text); 
+  box-shadow: var(--avatar-shadow-offset) 0px var(--text); 
 }
 .section-A__hi {
-  font-size: 14.75rem;
-  line-height: 95%;
-  text-shadow: 20px -20px 0px var(--text-shadow);
+  font-size: var(--hi-font-size);
 }
 .section-A__p {
   font-size: 1.1rem;
+  text-wrap: balance;
   margin-left: 12px;
 }
 button {
@@ -56,13 +88,45 @@ button {
   border-radius: 5px;
 }
 .btn-primary {
-  background: var(--btn-primary-clr);
+  background: var(--text);
+  color: var(--bg);
   transition: background 250ms;
 }
 .btn-primary:hover {
-  background: var(--btn-primary-hvr-clr);
+  background: var(--text-shadow);
+  color: var(--text);
 }
 .section-A__btn {
   margin-top: 1rem;
   margin-left: 12px;
+}
+.section-A__img-container {
+  margin-block: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-left: 12px;
+}
+.section-A__img {
+  width: 2.75rem;
+}
+
+@media (max-width: 800px) {
+  .section-A {
+    margin-top: 5rem;
+    min-height: 1vh;
+    min-height: 1svh;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    margin-inline: auto;
+    gap: 5rem;
+  }
+  .section-A__hi {
+    font-size: 8rem;
+  }
+  .section-A__wrapper {
+    margin-right: 3rem;
+  }
 }
